@@ -1,0 +1,79 @@
+/*
+TODO(you): Write any additional styles you need here.
+*/
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f0f0; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Menu Styles */
+#menu {
+  text-align: center;
+  background-color: #ffffff; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+input[type="text"], select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; 
+}
+
+/* Error Message Styles */
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Music Screen Styles */
+.music-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audio-player {
+  margin-top: 20px;
+}
+
+.gif-display {
+  margin-top: 20px;
+  max-width: 100%;
+}
+

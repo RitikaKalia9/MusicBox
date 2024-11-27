@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CS193X Music Box</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="musicbox-style.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16"/>
+</head>
+<body>
+
+    <div id="menu">
+        <h1>Music Box</h1>
+        <fieldset>
+            <form id="music-form"> 
+                <h2>1. Choose a song:</h2>
+                <select id="song-selector"></select>
+    
+                <h2>2. Choose a theme:</h2>
+                <input type="text" id="query-input" placeholder="Enter a word or phrase" />
+                <div id="error" class="inactive">Not enough GIFs for this theme. Please try another.</div>
+    
+                <!-- Play/Pause button inside the form -->
+                <img id="play-pause-button" src="images/play.png" alt="Play/Pause Button" style="width: 50px; padding-right: 20px; margin-top:20px; height: 50px; cursor: pointer;" />
+    
+                <input type="submit" value="Go"/>
+            </form>
+        </fieldset>
+    </div>
+    
+
+<!-- Container to display fetched GIFs -->
+<div id="gif-container">
+</div>
+
+
+
+<!-- Load other scripts -->
+<script src="audio-player.js"></script>
+<script src="fetch.js"></script> 
+<script src="script.js"></script>
+<script src="menu-screen.js"></script>
+<script src="music-screen.js"></script>
+<script src="play-button.js"></script>
+<script src="visualizer.js"></script>
+<script src="lib/dancer.min.js"></script>
+
+
+</body>
+</html>
