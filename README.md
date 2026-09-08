@@ -58,14 +58,6 @@ Then open `http://localhost:8000` in your browser.
 - Song audio is streamed from external URLs (`yayinternet.github.io`) rather than hosted in this repo — if that source ever goes down, playback will break.
 - No build step / dependency manager for the JS side — everything is plain `<script>` tags.
 
-## Can this go public on GitHub?
+## License
 
-**Technically, yes** — I checked and didn't find any API keys, secrets, tokens, or credentials anywhere in the code (`api.py`, the JS files, `songs.json`). The Giphy URLs and MP3 URLs are just public links, not authenticated API calls. `lib/dancer.min.js` is MIT-licensed and free to redistribute, and `lib/fetch.js` is a standard open-source polyfill.
-
-**One thing worth checking first:** this looks like a course assignment — `index.html`'s title is "CS193X Music Box," it's named "Practical6," and `style.css` explicitly says *"This style is provided by the course staff. Please do not modify this file!"* That strongly suggests it's built on instructor-provided starter code for a class (this matches Stanford's CS193X "Building on the Web"). Many courses have academic-integrity policies against posting assignment solutions publicly (past or present), since it can enable other students to copy the work. Before making the repo public, I'd double check:
-
-- Your course's syllabus or academic honesty policy on sharing assignment code
-- Whether the class is still running / the assignment still in use (some instructors are fine with publishing after the course ends, others aren't)
-- If unsure, you could ask the instructor directly, or keep the repo **private** (or public only after removing the parts that were provided vs. asking permission) to be safe
-
-If none of that applies to your situation (e.g., it's a personal/non-graded project, or your course explicitly allows it), there's nothing else blocking you from publishing it.
+`lib/dancer.min.js` is MIT-licensed ([source](https://github.com/jsantell/dancer.js)). `lib/fetch.js` is a standard open-source `fetch()` polyfill.
